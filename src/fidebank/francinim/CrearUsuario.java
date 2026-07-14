@@ -180,7 +180,7 @@ public class CrearUsuario extends javax.swing.JFrame {
             int pin = Integer.parseInt(txtPin.getText());
 
             Usuario usuario;
-            usuario = new Usuario(nombre, cedula, pin) {};
+            usuario = new Usuario(nombre, cedula, pin);
 
             List<Usuario> usuarios = Usuario.LeerUsuario();
             usuarios.add(usuario);
@@ -194,7 +194,7 @@ public class CrearUsuario extends javax.swing.JFrame {
             txtPin.setText("");
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, ex.getMessage());
+            JOptionPane.showMessageDialog(this, "Usuario no creado. ERROR");
         }
         new Principal().setVisible(true);
         this.dispose();

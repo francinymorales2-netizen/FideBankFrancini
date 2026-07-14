@@ -198,9 +198,8 @@ public class Principal extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(this, "Bienvenida/o " + usuario.getNombre());
 
-            // aquí abres el menú principal o la siguiente ventana
-            // new MenuPrincipal(usuario).setVisible(true);
-
+            new MenuPrincipal().setVisible(true);
+           
             this.dispose();
 
         } catch (Exception ex) {
