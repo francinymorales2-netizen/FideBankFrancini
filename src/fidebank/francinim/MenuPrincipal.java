@@ -28,21 +28,160 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        lblBank = new javax.swing.JLabel();
+        lblFIDE = new javax.swing.JLabel();
+        lblCuentas = new javax.swing.JLabel();
+        CmbCuentas = new javax.swing.JComboBox<>();
+        lblTransacciones = new javax.swing.JLabel();
+        CmbTransacciones = new javax.swing.JComboBox<>();
+        jPanel4 = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(669, 496));
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
+
+        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 93, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 82, Short.MAX_VALUE)
+        );
+
+        lblBank.setFont(new java.awt.Font("Segoe UI Light", 3, 36)); // NOI18N
+        lblBank.setForeground(new java.awt.Color(255, 255, 255));
+        lblBank.setText("BANK");
+
+        lblFIDE.setFont(new java.awt.Font("Segoe UI Light", 0, 36)); // NOI18N
+        lblFIDE.setForeground(new java.awt.Color(255, 255, 255));
+        lblFIDE.setText("FIDE");
+
+        lblCuentas.setBackground(new java.awt.Color(255, 255, 255));
+        lblCuentas.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        lblCuentas.setForeground(new java.awt.Color(255, 255, 255));
+        lblCuentas.setText("Cuentas");
+
+        CmbCuentas.setBackground(new java.awt.Color(204, 204, 255));
+        CmbCuentas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CmbCuentas.setForeground(new java.awt.Color(0, 0, 153));
+        CmbCuentas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mis Cuentas", "Crear Cuenta", "Eliminar Cuenta" }));
+        CmbCuentas.addActionListener(this::CmbCuentasActionPerformed);
+
+        lblTransacciones.setBackground(new java.awt.Color(255, 255, 255));
+        lblTransacciones.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        lblTransacciones.setForeground(new java.awt.Color(255, 255, 255));
+        lblTransacciones.setText("Transacciones");
+
+        CmbTransacciones.setBackground(new java.awt.Color(204, 204, 255));
+        CmbTransacciones.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CmbTransacciones.setForeground(new java.awt.Color(0, 0, 153));
+        CmbTransacciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Retiro", "Depósito", "Transferencia entre cuentas FideBank" }));
+        CmbTransacciones.addActionListener(this::CmbTransaccionesActionPerformed);
+
+        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 35, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblFIDE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblBank))
+                .addGap(76, 76, 76))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(238, 238, 238)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(181, 181, 181)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblCuentas)
+                            .addComponent(lblTransacciones)
+                            .addComponent(CmbTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CmbCuentas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(225, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(80, 80, 80)
+                            .addComponent(lblBank, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(lblFIDE)
+                            .addGap(9, 9, 9))))
+                .addGap(35, 35, 35)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblCuentas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(CmbCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(lblTransacciones)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(CmbTransacciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(71, 71, 71)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void CmbCuentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbCuentasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CmbCuentasActionPerformed
+
+    private void CmbTransaccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbTransaccionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CmbTransaccionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +209,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CmbCuentas;
+    private javax.swing.JComboBox<String> CmbTransacciones;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel lblBank;
+    private javax.swing.JLabel lblCuentas;
+    private javax.swing.JLabel lblFIDE;
+    private javax.swing.JLabel lblTransacciones;
     // End of variables declaration//GEN-END:variables
 }
